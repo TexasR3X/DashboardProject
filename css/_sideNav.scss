@@ -1,0 +1,21 @@
+@use "colors";
+
+div.sideNav li {list-style-type: none;}
+div.sideNav a {
+    text-decoration: none;
+    color: colors.$gray4;
+    transition: 0.25s;
+}
+div.sideNav a.currentPage, div.sideNav a:hover {
+    color: colors.$black;
+}
+
+ul.nav i {
+    margin-right: 15px;
+}
+
+// This is not working currently.
+div.sideNav img {
+    display: block;
+    margin-bottom: 50px;
+}
