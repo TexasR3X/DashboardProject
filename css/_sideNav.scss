@@ -1,5 +1,10 @@
 @use "colors";
 
+div.sideNav {
+    display: flex;
+    flex-direction: column;
+}
+
 div.sideNav li {list-style-type: none;}
 div.sideNav a {
     text-decoration: none;
@@ -14,9 +19,12 @@ ul.nav i {
     margin-right: 15px;
 }
 
-// This is not working currently.
+// This will effect the page logo.
 div.sideNav > img {
     display: block;
     margin-bottom: 50px;
-    height: 45px;
+    $logoHeight: 40px;
+    height: $logoHeight;
+    width: calc($logoHeight * 113 / 43);
+    // The logo's width and height have a ratio of 113:43 or approximately 139.19:45
 }
