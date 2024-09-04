@@ -1,0 +1,20 @@
+// Background Colors
+$pageBackgroundColor: #e6e6ff;
+$white: #fff;
+$lightBlue1: #eef6ff;
+$lightBlue2: #dcebff;
+
+
+@mixin borderRadius($background: $white) {
+    border-radius: 10px;
+    background: $background;
+    padding: 15px;
+}
+
+body {
+    background: $pageBackgroundColor;
+}
+
+.box {
+    @include borderRadius;
+}

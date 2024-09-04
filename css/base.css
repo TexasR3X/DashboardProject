@@ -1,1 +1,9 @@
-/*# sourceMappingURL=base.css.map */
+body {
+  background: #e6e6ff;
+}
+
+.box {
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+}/*# sourceMappingURL=base.css.map */
