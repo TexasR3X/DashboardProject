@@ -2,7 +2,7 @@
 $white: #fff;
 $gray1: #ebebeb;
 $gray2: #e5e5e5;
-$gray3: #c5c5c5;
+$gray3: #d6d6d6;
 
 
 @mixin borderRadius($background: $white) {
@@ -17,10 +17,14 @@ $gray3: #c5c5c5;
 }
 
 body {
-    background: $pageBackgroundColor;
+    background: $gray3;
     margin: 70px;
 }
 
-.box {
-    @include borderRadius;
+div.container {
+    display: flex;
+}
+
+.topBar {
+    @include borderRadius();
 }

@@ -4,11 +4,15 @@
 }
 
 body {
-  background: #e6e6ff;
+  background: #d6d6d6;
   margin: 70px;
 }
 
-.box {
+div.container {
+  display: flex;
+}
+
+.topBar {
   border-radius: 10px;
   background: #fff;
   padding: 15px;
