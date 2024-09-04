@@ -1,5 +1,5 @@
 @use "colors";
-@use "box";
+@use "boxes";
 
 
 div.sideNav {
@@ -8,19 +8,14 @@ div.sideNav {
     li {list-style-type: none;}
     a {
         text-decoration: none;
-    color: colors.$gray4;
-    transition: 0.25s;
+        color: colors.$gray4;
+        transition: 0.25s;
     }
-}
-div.sideNav a.currentPage, div.sideNav a:hover {
-    color: colors.$black;
-}
-
-div.sideNav ul i {
-    margin-right: 15px;
+    a.currentPage, a:hover {color: colors.$black;}
+    ul i {margin-right: 15px;}
 }
 
-// This will effect the page logo.
+// This will select the page logo.
 div.sideNav > img {
     display: block;
     height: 40px;
@@ -28,7 +23,6 @@ div.sideNav > img {
 }
 
 div.upgrade {
-    @include box.box($padding: 20px 30px);
+    @include boxes.box($padding: 20px 30px);
     margin: 120px 0 70px 0;
-
 }

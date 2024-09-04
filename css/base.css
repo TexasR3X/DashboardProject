@@ -9,11 +9,9 @@ div.sideNav a {
   color: #7d7d7d;
   transition: 0.25s;
 }
-
 div.sideNav a.currentPage, div.sideNav a:hover {
   color: #2e2e2e;
 }
-
 div.sideNav ul i {
   margin-right: 15px;
 }
@@ -59,4 +57,8 @@ div.topBar, div.chat, div.team, div.agenda {
   background: #fff;
   padding: 40px;
   margin: 10px;
+}
+
+button {
+  border-radius: 100px;
 }/*# sourceMappingURL=base.css.map */

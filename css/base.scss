@@ -1,6 +1,6 @@
 @use "colors";
 @use "sideNav";
-@use "box";
+@use "boxes";
 
 
 * {
@@ -19,8 +19,12 @@ div.container {
 }
 
 div.sideNav {
-    @include box.box($background: colors.$gray1);
+    @include boxes.box($background: colors.$gray1);
 }
 div.topBar, div.chat, div.team, div.agenda {
-    @include box.box();
+    @include boxes.box();
+}
+
+button {
+    border-radius: 100px;
 }
