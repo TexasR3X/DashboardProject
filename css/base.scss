@@ -10,7 +10,7 @@ $black: #2e2e2e;
 // The font "Inter" is used for the whole page.
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-@mixin borderRadius($background: $white) {
+@mixin box($background: $white) {
     border-radius: 10px;
     background: $background;
     padding: 30px;
@@ -31,19 +31,16 @@ div.container {
     display: flex;
 }
 
-div.sideNav {
-    @include borderRadius($background: $gray1);
-}
-div.topBar, div.chat, div.team, div.agenda {
-    @include borderRadius();
-}
+div.sideNav {@include box($background: $gray1);}
+div.topBar, div.chat, div.team, div.agenda {@include box();}
 
-div.sideNav li {
-    list-style-type: none;
-}
+div.sideNav li {list-style-type: none;}
 div.sideNav a {
     text-decoration: none;
     color: $gray4;
 }
+div.sideNav a.currentPage {color: $black;}
 
-// class="currentPage"
+.upgrade {
+    @include box();
+}

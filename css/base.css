@@ -33,4 +33,14 @@ div.sideNav li {
 div.sideNav a {
   text-decoration: none;
   color: #7d7d7d;
+}
+
+div.sideNav a.currentPage {
+  color: #2e2e2e;
+}
+
+.upgrade {
+  border-radius: 10px;
+  background: #fff;
+  padding: 30px;
 }/*# sourceMappingURL=base.css.map */
