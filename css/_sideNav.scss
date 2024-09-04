@@ -4,19 +4,19 @@
 
 div.sideNav {
     width: 20%;
-}
 
-div.sideNav li {list-style-type: none;}
-div.sideNav a {
-    text-decoration: none;
+    li {list-style-type: none;}
+    a {
+        text-decoration: none;
     color: colors.$gray4;
     transition: 0.25s;
+    }
 }
 div.sideNav a.currentPage, div.sideNav a:hover {
     color: colors.$black;
 }
 
-ul.nav i {
+div.sideNav ul i {
     margin-right: 15px;
 }
 
@@ -30,4 +30,5 @@ div.sideNav > img {
 div.upgrade {
     @include box.box($padding: 20px 30px);
     margin: 120px 0 70px 0;
+
 }

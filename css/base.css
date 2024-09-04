@@ -1,11 +1,9 @@
 div.sideNav {
   width: 20%;
 }
-
 div.sideNav li {
   list-style-type: none;
 }
-
 div.sideNav a {
   text-decoration: none;
   color: #7d7d7d;
@@ -16,7 +14,7 @@ div.sideNav a.currentPage, div.sideNav a:hover {
   color: #2e2e2e;
 }
 
-ul.nav i {
+div.sideNav ul i {
   margin-right: 15px;
 }
 
