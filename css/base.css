@@ -17,7 +17,7 @@ ul.nav i {
   margin-right: 15px;
 }
 
-div.sideNav img {
+div.sideNav > img {
   display: block;
   margin-bottom: 50px;
 }
@@ -47,6 +47,7 @@ div.topBar, div.chat, div.team, div.agenda {
   border-radius: 15px;
   background: #fff;
   padding: 40px;
+  gap: 20px;
 }
 
 .upgrade {

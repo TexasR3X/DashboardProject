@@ -1,8 +1,6 @@
 @use "colors";
 @use "sideNav";
 
-
-
 // The font "Inter" is used for the whole page.
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
@@ -28,7 +26,10 @@ div.container {
 }
 
 div.sideNav {@include box($background: colors.$gray1);}
-div.topBar, div.chat, div.team, div.agenda {@include box();}
+div.topBar, div.chat, div.team, div.agenda {
+    @include box();
+    gap: 20px;
+}
 
 
 
