@@ -1,0 +1,58 @@
+// Background Colors
+$white: #fff;
+$gray1: #ebebeb;
+$gray2: #e5e5e5;
+$gray3: #d6d6d6;
+// Font Colors
+$gray4: #7d7d7d;
+$black: #2e2e2e;
+
+// The font "Inter" is used for the whole page.
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@mixin box($background: $white) {
+    border-radius: 15px;
+    background: $background;
+    padding: 30px;
+}
+
+* {
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $gray3;
+    margin: 70px;
+}
+
+div.container {
+    display: flex;
+}
+
+div.sideNav {@include box($background: $gray1);}
+div.topBar, div.chat, div.team, div.agenda {@include box();}
+
+div.sideNav li {list-style-type: none;}
+div.sideNav a {
+    text-decoration: none;
+    color: $gray4;
+    transition: 0.25s;
+}
+div.sideNav a.currentPage, div.sideNav a:hover {
+    color: $black;;
+}
+
+ul.nav i {
+    margin-top: 10px;
+}
+
+.upgrade {
+    @include box();
+}
+
+div.sideBar > img {
+    display: block;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d6d6d6;
+  margin: 70px;
+}
+
+div.container {
+  display: flex;
+}
+
+div.sideNav {
+  border-radius: 15px;
+  background: #ebebeb;
+  padding: 30px;
+}
+
+div.topBar, div.chat, div.team, div.agenda {
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px;
+}
+
+div.sideNav li {
+  list-style-type: none;
+}
+
+div.sideNav a {
+  text-decoration: none;
+  color: #7d7d7d;
+  transition: 0.25s;
+}
+
+div.sideNav a.currentPage, div.sideNav a:hover {
+  color: #2e2e2e;
+}
+
+ul.nav i {
+  margin-top: 10px;
+}
+
+.upgrade {
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px;
+}
+
+div.sideBar > img {
+  display: block;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=base.css.map */
