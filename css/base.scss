@@ -11,7 +11,7 @@ $black: #2e2e2e;
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @mixin box($background: $white) {
-    border-radius: 10px;
+    border-radius: 15px;
     background: $background;
     padding: 30px;
 }
@@ -38,9 +38,21 @@ div.sideNav li {list-style-type: none;}
 div.sideNav a {
     text-decoration: none;
     color: $gray4;
+    transition: 0.25s;
 }
-div.sideNav a.currentPage {color: $black;}
+div.sideNav a.currentPage, div.sideNav a:hover {
+    color: $black;;
+}
+
+ul.nav i {
+    margin-top: 10px;
+}
 
 .upgrade {
     @include box();
+}
+
+div.sideBar > img {
+    display: block;
+    margin-bottom: 50px;
 }
