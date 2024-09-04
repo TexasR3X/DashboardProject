@@ -59,6 +59,9 @@ div.topBar, div.chat, div.team, div.agenda {
   margin: 10px;
 }
 
-button {
-  border-radius: 100px;
+div.upgrade button {
+  background: #a3d6ff;
+  border: 0;
+  padding: 5px 40px;
+  border-radius: 50px;
 }/*# sourceMappingURL=base.css.map */

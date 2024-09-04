@@ -6,3 +6,10 @@
     padding: $padding;
     margin: 10px;
 }
+
+@mixin button($background: colors.$blue, $padding: 5px) {
+    background: $background;
+    border: 0;
+    padding: $padding;
+    border-radius: 50px;
+}
