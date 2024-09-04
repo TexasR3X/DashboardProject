@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="base.css">
+    <script src="https://kit.fontawesome.com/64444e88c9.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -11,11 +12,11 @@
         <div class="sideNav">
             <img src="" alt="Logip-logo">
             <ul class="nav">
-                <li><a href=""><img src="" alt="">Home</a></li>
-                <li><a href=""><img src="" alt="">Projects</a></li>
-                <li><a href=""><img src="" alt="">Tasks</a></li>
-                <li><a href=""><img src="" alt="">Team</a></li>
-                <li><a href=""><img src="" alt="">Settings</a></li>
+                <li><a href=""><i class="fa-regular fa-home"></i>Home</a></li>
+                <li><a href=""><i class="fa-regular fa-border-all"></i>Projects</a></li>
+                <li><a href=""><i class="fa-regular fa-list-check"></i>Tasks</a></li>
+                <li><a href=""><i class="fa-regular fa-sitemap"></i>Team</a></li>
+                <li><a href=""><i class="fa-regular fa-gear"></i>Settings</a></li>
             </ul>
             <div class="upgrade">
                 <h2>Upgrade to Pro</h2>
@@ -24,8 +25,8 @@
                 <button>Upgrade</button>
             </div>
             <ul class="misc">
-                <li><a href="#"><img src="" alt="info-symbol">Help & information</a></li>
-                <li><a href="#"><img src="" alt="logout-symbol">Log out</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-info"></i>Help & information</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-minus"></i>Log out</a></li>
             </ul>
         </div>
         <div class="content">
@@ -36,10 +37,10 @@
                     <p>Project manager</p>
                 </div>
                 <div>
-                    <button class="calendar"><img src="" alt=""></button>
+                    <button class="calendar"><i class="fa-regular fa-calendar"></i>27 Feb</button>
                     <input type="search" class="search">
-                    <button class="notifications"><img src="" alt=""></button>
-                    <button class="messages"><img src="" alt=""></button>
+                    <button class="notifications"><i class="fa-regular fa-bell"></i></button>
+                    <button class="messages"><i class="fa-regular fa-comment-dots"></i></button>
                 </div>
             </div>
             <div class="chat">
@@ -48,24 +49,43 @@
                     <h5>Megan norton</h5>
                     <p>@megnortan</p>
                     <div class="callOptions">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <i class="fa-regular fa-phone"></i>
+                        <i class="fa-regular fa-camera"></i>
+                        <i class="fa-regular fa-ellipsis-vertical"></i>
                     </div>
                 </div>
                 <div class="chatText">
                     <h4>Today</h4>
-                    <div class="text1"><p>Hi! Next week we'll start a new project. I'll tell you all the details later</p></div>
-                    <div class="text2"><img src="" alt="audio-file"></div>
-                    <div class="text3">Here is the link to tomorrow's meeting, check it please</div>
-                    <div class="text4"><img src="" alt="google-meet-link"></div>
-                    <input type="text" class="writeMessage">
+                    <div class="text1">
+                        <p>Hi! Next week we'll start a new project. I'll tell you all the details later</p>
+                    </div>
+                    <div class="text2">
+                        <img src="" alt="audio-file">
+                    </div>
+                    <div class="text3">
+                        <p>Here is the link to tomorrow's meeting, check it please</p>
+                    </div>
+                    <div class="text4">
+                        <img src="" alt="google-meet-link">
+                    </div>
+                    <div class="writeMessage">
+                        <button class="textIcon">
+                            <i class="fa-regular fa-paperclip"></i>
+                        </button>
+                        <input type="text">
+                        <button class="textIcon">
+                            <i class="fa-regular fa-smile"></i>
+                        </button>
+                        <button class="textIcon">
+                            <i class="fa-regular fa-microphone"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="team">
                 <div class="teamTitle">
                     <h1>team</h1>
-                    <button><img src="" alt="number-of-team-members"></button>
+                    <button><i class="fa-regular fa-user"></i></button>
                 </div>
                 <div class="teamMember">
                     <img src="" alt="teamProfilePicture">
@@ -74,7 +94,7 @@
                         <p>Project manager</p>
                     </div>
                     <button class="messageButton">
-                        <img src="" alt="message-button">
+                        <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
                 <div class="teamMember">
@@ -84,7 +104,7 @@
                         <p>Sales manager</p>
                     </div>
                     <button class="messageButton">
-                        <img src="" alt="message-button">
+                        <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
                 <div class="teamMember">
@@ -94,21 +114,41 @@
                         <p>UX/UI designer</p>
                     </div>
                     <button class="messageButton">
-                        <img src="" alt="message-button">
+                        <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
                 <div class="invite">
                     <button class="inviteButton">
-                        <img src="" alt="invite-new-team-member">
+                        <i class="fa-regular fa-add"></i>
                     </button>
                     <h5>Invite new team member</h5>
                 </div>
             </div>
             <div class="agenda">
-                <div class="projectTitle"></div>
-                <div class="eventInfo"></div>
-                <div class="eventInfo"></div>
-                <div class="attendees"></div>
+                <div class="projectTitle">
+                    <h1>Project onboarding</h1>
+                    <p>Add description of your meeting</p>
+                </div>
+                <div class="eventInfo">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>11:00-12:30</h6>
+                    <button><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                </div>
+                <div class="eventInfo">
+                    <i class="fa-regular fa-calendar"></i>
+                    <h6>Monday, 20 February</h6>
+                    <button><i class="fa-regular fa-ellipsis-vertical"></i></button>
+                </div>
+                <div class="attendees">
+                    <div>
+                        <h5>Attendees</h5>
+                        <img src="" alt="attendee-profiles">
+                    </div>
+                    <div>
+                        <h6>Send invitation link</h6>
+                        <i class="fa-regular fa-paper-airplane"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
