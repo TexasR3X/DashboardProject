@@ -3,15 +3,21 @@ $white: #fff;
 $gray1: #ebebeb;
 $gray2: #e5e5e5;
 $gray3: #d6d6d6;
+// Font Colors
+$gray4: #7d7d7d;
+$black: #2e2e2e;
 
+// The font "Inter" is used for the whole page.
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @mixin borderRadius($background: $white) {
     border-radius: 10px;
     background: $background;
-    padding: 15px;
+    padding: 30px;
 }
 
 * {
+    font-family: Inter;
     margin: 0;
     padding: 0;
 }
@@ -25,6 +31,19 @@ div.container {
     display: flex;
 }
 
-.topBar {
+div.sideNav {
+    @include borderRadius($background: $gray1);
+}
+div.topBar, div.chat, div.team, div.agenda {
     @include borderRadius();
 }
+
+div.sideNav li {
+    list-style-type: none;
+}
+div.sideNav a {
+    text-decoration: none;
+    color: $gray4;
+}
+
+// class="currentPage"
