@@ -1,5 +1,10 @@
 @use "colors";
+@use "box";
 
+
+div.sideNav {
+    width: 20%;
+}
 
 div.sideNav li {list-style-type: none;}
 div.sideNav a {
@@ -19,4 +24,10 @@ ul.nav i {
 div.sideNav > img {
     display: block;
     height: 40px;
+    margin-bottom: 50px;
+}
+
+div.upgrade {
+    @include box.box($padding: 20px 30px);
+    margin: 120px 0 70px 0;
 }

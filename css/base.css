@@ -1,3 +1,7 @@
+div.sideNav {
+  width: 20%;
+}
+
 div.sideNav li {
   list-style-type: none;
 }
@@ -19,6 +23,15 @@ ul.nav i {
 div.sideNav > img {
   display: block;
   height: 40px;
+  margin-bottom: 50px;
+}
+
+div.upgrade {
+  border-radius: 15px;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 10px;
+  margin: 120px 0 70px 0;
 }
 
 * {
@@ -48,10 +61,4 @@ div.topBar, div.chat, div.team, div.agenda {
   background: #fff;
   padding: 40px;
   margin: 10px;
-}
-
-.upgrade {
-  border-radius: 15px;
-  background: #fff;
-  padding: 40px;
 }/*# sourceMappingURL=base.css.map */

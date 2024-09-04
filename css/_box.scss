@@ -1,0 +1,8 @@
+@use "colors";
+
+@mixin box($background: colors.$white, $padding: 40px) {
+    border-radius: 15px;
+    background: $background;
+    padding: $padding;
+    margin: 10px;
+}
