@@ -1,4 +1,5 @@
 @use "colors";
+@use "fonts";
 @use "sideNav";
 @use "topBar";
 @use "boxes";
@@ -16,8 +17,7 @@ body {
 }
 
 p {
-    font-size: 14px;
-    font-weight: 200;
+    @include fonts.font()
 }
 
 div.container {
@@ -31,3 +31,4 @@ div.topBar, div.chat, div.team, div.agenda {
     @include boxes.box();
 }
 
+button {@include boxes.button();}
