@@ -119,6 +119,10 @@ div.topBar {
   margin: 10px;
 }
 
+div.main {
+  display: flex;
+}
+
 button {
   background: #a3d6ff;
   border: 0;

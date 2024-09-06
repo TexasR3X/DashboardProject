@@ -36,4 +36,8 @@ div.topBar{
     @include boxes.box($padding: 15px)
 }
 
+div.main{
+    display: flex
+}
+
 button {@include boxes.button();}
