@@ -1,4 +1,5 @@
 @use "colors";
+@use "fonts";
 @use "sideNav";
 @use "topBar";
 @use "boxes";
@@ -13,6 +14,10 @@
 body {
     background: colors.$gray3;
     margin: 70px;
+}
+
+p {
+    @include fonts.smallText()
 }
 
 div.container {
@@ -31,3 +36,4 @@ div.topBar{
     @include boxes.box($padding: 15px)
 }
 
+button {@include boxes.button();}
