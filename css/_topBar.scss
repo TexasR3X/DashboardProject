@@ -1,0 +1,37 @@
+@use "colors";
+@use "boxes";
+
+.topBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+
+    .accountInfo{
+        display: flex;
+        border-right: 1px solid colors.$gray3;
+        padding-right: 15px;
+
+        .profilePic1{
+            height: 40px;
+            padding-right: 10px;
+        }
+    }
+    
+    .calendar{
+        margin-left: 15px;
+        @include boxes.button($background: colors.$gray1);
+        padding: 15px;
+    }
+}
+
+
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+

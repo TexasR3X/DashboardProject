@@ -17,7 +17,7 @@ body {
 }
 
 p {
-    @include fonts.smallText();
+    @include fonts.smallText;
 }
 
 div.container {
@@ -27,8 +27,13 @@ div.container {
 div.sideNav {
     @include boxes.box($background: colors.$gray1);
 }
-div.topBar, div.chat, div.team, div.agenda {
+
+div.chat, div.team, div.agenda {
     @include boxes.box();
+}
+
+div.topBar{
+    @include boxes.box($padding: 15px)
 }
 
 button {@include boxes.button();}
