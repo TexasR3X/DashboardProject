@@ -30,6 +30,15 @@ div.upgrade {
   margin: 120px 0 70px 0;
 }
 
+div.upgrade button {
+  background: #a3d6ff;
+  border: 0;
+  padding: 5px 40px;
+  border-radius: 50px;
+  background: rgb(214, 214, 214);
+  background: linear-gradient(0deg, rgb(214, 214, 214) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 * {
   font-family: Inter;
   margin: 0;
@@ -57,11 +66,4 @@ div.topBar, div.chat, div.team, div.agenda {
   background: #fff;
   padding: 40px;
   margin: 10px;
-}
-
-div.upgrade button {
-  background: #a3d6ff;
-  border: 0;
-  padding: 5px 40px;
-  border-radius: 50px;
 }/*# sourceMappingURL=base.css.map */

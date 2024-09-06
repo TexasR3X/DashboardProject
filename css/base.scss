@@ -1,5 +1,6 @@
 @use "colors";
 @use "sideNav";
+@use "topBar";
 @use "boxes";
 
 
@@ -25,6 +26,3 @@ div.topBar, div.chat, div.team, div.agenda {
     @include boxes.box();
 }
 
-div.upgrade button {
-    @include boxes.button($padding: 5px 40px);
-}

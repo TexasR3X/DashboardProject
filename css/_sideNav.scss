@@ -26,3 +26,10 @@ div.upgrade {
     @include boxes.box($padding: 20px 30px);
     margin: 120px 0 70px 0;
 }
+
+div.upgrade button {
+    @include boxes.button($padding: 5px 40px);
+
+    background: rgb(214,214,214);
+    background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(255,255,255,0) 100%);
+}
