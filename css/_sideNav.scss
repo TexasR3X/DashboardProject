@@ -17,6 +17,13 @@ div.sideNav {
         @include fonts.smallText;
         font-weight: 400;
         margin: 23px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            @include boxes.button($background: colors.$gray3);
+        }
     }
 }
 
