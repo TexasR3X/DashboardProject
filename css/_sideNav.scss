@@ -13,6 +13,11 @@ div.sideNav {
     }
     a.currentPage, a:hover {color: colors.$black;}
     ul i {margin-right: 15px;}
+    li {
+        @include fonts.smallText;
+        font-weight: 400;
+        margin: 23px 0;
+    }
 }
 
 // This will select the page logo.
@@ -20,11 +25,6 @@ div.sideNav > img {
     display: block;
     height: 35px;
     margin-bottom: 70px;
-}
-
-div.sideNav li {
-    @include fonts.smallText;
-    font-weight: 400;
 }
 
 div.upgrade {

@@ -15,17 +15,17 @@ div.sideNav a.currentPage, div.sideNav a:hover {
 div.sideNav ul i {
   margin-right: 15px;
 }
+div.sideNav li {
+  font-size: 13px;
+  font-weight: 200;
+  font-weight: 400;
+  margin: 23px 0;
+}
 
 div.sideNav > img {
   display: block;
   height: 35px;
   margin-bottom: 70px;
-}
-
-div.sideNav li {
-  font-size: 13px;
-  font-weight: 200;
-  font-weight: 400;
 }
 
 div.upgrade {
