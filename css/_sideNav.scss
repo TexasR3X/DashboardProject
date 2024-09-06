@@ -13,6 +13,18 @@ div.sideNav {
     }
     a.currentPage, a:hover {color: colors.$black;}
     ul i {margin-right: 15px;}
+    li {
+        @include fonts.smallText;
+        font-weight: 400;
+        margin: 23px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            @include boxes.button($background: colors.$gray3);
+        }
+    }
 }
 
 // This will select the page logo.
@@ -22,16 +34,17 @@ div.sideNav > img {
     margin-bottom: 70px;
 }
 
-div.sideNav li {
-    @include fonts.smallText;
-    font-weight: 400;
-}
-
 div.upgrade {
     @include boxes.box($padding: 20px 30px);
     background: linear-gradient(0deg, #00000000 0%, colors.$white 70%, colors.$white 100%);
     margin: 120px 0 50px 0;
+    text-align: center;
 
     h2 {font-size: 18px;}
-    button {@include boxes.button($padding: 5px 40px);}
+    p {
+        color: colors.$purple;
+        padding: 0 10px;
+        margin: -10px 0 15px 0;
+    }
+    button {@include boxes.button($padding: 5px 50px);}
 }

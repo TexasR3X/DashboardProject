@@ -15,17 +15,26 @@ div.sideNav a.currentPage, div.sideNav a:hover {
 div.sideNav ul i {
   margin-right: 15px;
 }
+div.sideNav li {
+  font-size: 13px;
+  font-weight: 200;
+  font-weight: 400;
+  margin: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.sideNav li button {
+  background: #d6d6d6;
+  border: 0;
+  padding: 5px;
+  border-radius: 50px;
+}
 
 div.sideNav > img {
   display: block;
   height: 35px;
   margin-bottom: 70px;
-}
-
-div.sideNav li {
-  font-size: 13px;
-  font-weight: 200;
-  font-weight: 400;
 }
 
 div.upgrade {
@@ -35,14 +44,20 @@ div.upgrade {
   margin: 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #fff 70%, #fff 100%);
   margin: 120px 0 50px 0;
+  text-align: center;
 }
 div.upgrade h2 {
   font-size: 18px;
 }
+div.upgrade p {
+  color: #380d83;
+  padding: 0 10px;
+  margin: -10px 0 15px 0;
+}
 div.upgrade button {
   background: #a3d6ff;
   border: 0;
-  padding: 5px 40px;
+  padding: 5px 50px;
   border-radius: 50px;
 }
 

@@ -17,7 +17,7 @@ body {
 }
 
 p {
-    @include fonts.smallText()
+    @include fonts.smallText;
 }
 
 div.container {
