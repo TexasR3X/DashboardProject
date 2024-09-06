@@ -35,14 +35,20 @@ div.upgrade {
   margin: 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #fff 70%, #fff 100%);
   margin: 120px 0 50px 0;
+  text-align: center;
 }
 div.upgrade h2 {
   font-size: 18px;
 }
+div.upgrade p {
+  color: #380d83;
+  padding: 0 10px;
+  margin: -10px 0 15px 0;
+}
 div.upgrade button {
   background: #a3d6ff;
   border: 0;
-  padding: 5px 40px;
+  padding: 5px 50px;
   border-radius: 50px;
 }
 

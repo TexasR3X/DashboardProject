@@ -31,7 +31,13 @@ div.upgrade {
     @include boxes.box($padding: 20px 30px);
     background: linear-gradient(0deg, #00000000 0%, colors.$white 70%, colors.$white 100%);
     margin: 120px 0 50px 0;
+    text-align: center;
 
     h2 {font-size: 18px;}
-    button {@include boxes.button($padding: 5px 40px);}
+    p {
+        color: colors.$purple;
+        padding: 0 10px;
+        margin: -10px 0 15px 0;
+    }
+    button {@include boxes.button($padding: 5px 50px);}
 }
