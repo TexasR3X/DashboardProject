@@ -29,6 +29,7 @@ div.sideNav li button {
   padding: 5px;
   border: 0;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 div.sideNav > img {
@@ -56,6 +57,7 @@ div.upgrade button {
   padding: 5px 50px;
   border: 0;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .topBar {
@@ -81,6 +83,7 @@ div.upgrade button {
   padding: 5px;
   border: 0;
   border-radius: 50px;
+  cursor: pointer;
   padding: 15px;
 }
 
@@ -95,6 +98,7 @@ div.team button {
   padding: 5px;
   border: 0;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 div.teamTitle {
@@ -189,4 +193,5 @@ button {
   padding: 5px;
   border: 0;
   border-radius: 50px;
+  cursor: pointer;
 }/*# sourceMappingURL=base.css.map */
