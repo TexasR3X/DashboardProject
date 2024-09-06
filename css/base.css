@@ -26,8 +26,8 @@ div.sideNav li {
 }
 div.sideNav li button {
   background: #d6d6d6;
-  border: 0;
   padding: 5px;
+  border: 0;
   border-radius: 50px;
 }
 
@@ -53,8 +53,8 @@ div.upgrade p {
 }
 div.upgrade button {
   background: #a3d6ff;
-  border: 0;
   padding: 5px 50px;
+  border: 0;
   border-radius: 50px;
 }
 
@@ -78,8 +78,8 @@ div.upgrade button {
 .left .calendar {
   margin-left: 15px;
   background: #ebebeb;
-  border: 0;
   padding: 5px;
+  border: 0;
   border-radius: 50px;
   padding: 15px;
 }
@@ -90,21 +90,42 @@ div.upgrade button {
   gap: 10px;
 }
 
+div.team button {
+  background: #d6d6d6;
+  padding: 5px;
+  border: 0;
+  border-radius: 50px;
+}
+
 div.teamTitle {
   display: flex;
   justify-content: space-between;
 }
-
-div.teamMember {
-  display: flex;
-  margin: 20px 0;
+div.teamTitle button {
+  color: #2020a0;
 }
-div.teamMember img {
+
+div.teamMember, div.invite {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+div.teamMember img, div.invite img {
   height: 30px;
 }
-div.teamMember div.memberName {
+div.teamMember div.memberName, div.invite div.memberName {
   flex-grow: 1;
   padding-left: 10px;
+}
+
+div.invite {
+  margin: 20px 0 -10px 0;
+  border-top: 1px solid #d6d6d6;
+  padding-top: 15px;
+}
+div.invite h6 {
+  margin-left: 20px;
 }
 
 * {
@@ -165,7 +186,7 @@ div.main {
 
 button {
   background: #a3d6ff;
-  border: 0;
   padding: 5px;
+  border: 0;
   border-radius: 50px;
 }/*# sourceMappingURL=base.css.map */

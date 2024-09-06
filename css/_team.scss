@@ -3,20 +3,32 @@
 @use "boxes";
 
 
+div.team button {@include boxes.button($background: colors.$gray3);}
+
 div.teamTitle {
     display: flex;
     justify-content: space-between;
+    
+    button {color: colors.$darkBlue;}
 }
 
-div.teamMember {
+div.teamMember, div.invite {
     display: flex;
+    align-items: center;
     margin: 20px 0;
+    cursor: pointer;
 
-    img {
-        height: 30px;
-    }
+    img {height: 30px;}
     div.memberName {
         flex-grow: 1;
         padding-left: 10px;
     }
+}
+
+div.invite {
+    margin: 20px 0 -10px 0;
+    border-top: 1px solid colors.$gray3;
+    padding-top: 15px;
+
+    h6 {margin-left: 20px;}
 }
