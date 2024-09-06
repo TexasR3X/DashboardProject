@@ -1,4 +1,8 @@
 div.sideNav {
+  border-radius: 15px;
+  background: #ebebeb;
+  padding: 40px;
+  margin: 10px;
   width: 25%;
 }
 div.sideNav li {
@@ -156,13 +160,6 @@ div.container {
   display: flex;
 }
 
-div.sideNav {
-  border-radius: 15px;
-  background: #ebebeb;
-  padding: 40px;
-  margin: 10px;
-}
-
 div.chat {
   border-radius: 15px;
   background: #fff;
@@ -194,4 +191,9 @@ button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  filter: brightness(1.04);
 }/*# sourceMappingURL=base.css.map */
