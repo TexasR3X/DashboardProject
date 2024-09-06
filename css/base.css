@@ -22,6 +22,12 @@ div.sideNav > img {
   margin-bottom: 70px;
 }
 
+div.sideNav li {
+  font-size: 13px;
+  font-weight: 200;
+  font-weight: 400;
+}
+
 div.upgrade {
   border-radius: 15px;
   background: #fff;
@@ -52,7 +58,7 @@ body {
 }
 
 p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 200;
 }
 

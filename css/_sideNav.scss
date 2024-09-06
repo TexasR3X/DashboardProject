@@ -1,4 +1,5 @@
 @use "colors";
+@use "fonts";
 @use "boxes";
 
 
@@ -19,6 +20,11 @@ div.sideNav > img {
     display: block;
     height: 35px;
     margin-bottom: 70px;
+}
+
+div.sideNav li {
+    @include fonts.smallText;
+    font-weight: 400;
 }
 
 div.upgrade {

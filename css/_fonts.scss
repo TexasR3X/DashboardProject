@@ -1,8 +1,4 @@
-$smallSize: 12px;
-$smallWeight: 200;
-
-
-@mixin font($size: $smallSize, $weight: $smallWeight) {
-    font-size: $size;
-    font-weight: $weight;
+@mixin smallText {
+    font-size: 13px;
+    font-weight: 200;
 }
