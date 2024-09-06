@@ -1,0 +1,22 @@
+@use "colors";
+@use "fonts";
+@use "boxes";
+
+
+div.teamTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.teamMember {
+    display: flex;
+    margin: 20px 0;
+
+    img {
+        height: 30px;
+    }
+    div.memberName {
+        flex-grow: 1;
+        padding-left: 10px;
+    }
+}

@@ -1,8 +1,9 @@
 @use "colors";
 @use "fonts";
+@use "boxes";
 @use "sideNav";
 @use "topBar";
-@use "boxes";
+@use "team";
 
 
 * {
@@ -16,6 +17,8 @@ body {
     margin: 70px;
 }
 
+h2 {font-size: 18px;}
+
 p {
     @include fonts.smallText;
 }
@@ -28,8 +31,11 @@ div.sideNav {
     @include boxes.box($background: colors.$gray1);
 }
 
-div.chat, div.team, div.agenda {
+div.chat {
     @include boxes.box();
+}
+div.team, div.agenda {
+    @include boxes.box($padding: 30px);
 }
 
 div.topBar{
