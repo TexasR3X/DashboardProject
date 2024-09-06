@@ -24,12 +24,9 @@ div.sideNav > img {
 
 div.upgrade {
     @include boxes.box($padding: 20px 30px);
+    background: linear-gradient(0deg, #00000000 0%, colors.$white 70%, colors.$white 100%);
     margin: 120px 0 70px 0;
-}
 
-div.upgrade button {
-    @include boxes.button($padding: 5px 40px);
-
-    background: rgb(214,214,214);
-    background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(255,255,255,0) 100%);
+    h2 {font-size: 20px;}
+    button {@include boxes.button($padding: 5px 40px);}
 }

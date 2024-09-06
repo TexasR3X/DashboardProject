@@ -27,16 +27,17 @@ div.upgrade {
   background: #fff;
   padding: 20px 30px;
   margin: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #fff 70%, #fff 100%);
   margin: 120px 0 70px 0;
 }
-
+div.upgrade h2 {
+  font-size: 20px;
+}
 div.upgrade button {
   background: #a3d6ff;
   border: 0;
   padding: 5px 40px;
   border-radius: 50px;
-  background: rgb(214, 214, 214);
-  background: linear-gradient(0deg, rgb(214, 214, 214) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 * {
@@ -48,6 +49,11 @@ div.upgrade button {
 body {
   background: #d6d6d6;
   margin: 70px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 200;
 }
 
 div.container {
