@@ -31,6 +31,7 @@ div.sideNav li button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.25s;
 }
 
 div.sideNav > img {
@@ -59,6 +60,7 @@ div.upgrade button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.25s;
 }
 
 .topBar {
@@ -85,6 +87,7 @@ div.upgrade button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.25s;
   padding: 15px;
 }
 
@@ -100,6 +103,7 @@ div.team button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.25s;
 }
 
 div.teamTitle {
@@ -160,6 +164,14 @@ div.eventInfo > :nth-child(2) {
 }
 div.eventInfo div {
   font-size: 13px;
+}
+div.eventInfo button {
+  background: #ebebeb;
+}
+
+div.attendees div:first-child img {
+  height: 24px;
+  margin-right: -13px;
 }
 
 * {

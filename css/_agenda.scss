@@ -17,4 +17,12 @@ div.eventInfo {
     margin-bottom: 12px;
 
     div {@include fonts.smallText;}
+    button {background: colors.$gray1;}
+}
+
+div.attendees div:first-child {
+    img {
+        height: 24px;
+        margin-right: -13px;
+    }
 }

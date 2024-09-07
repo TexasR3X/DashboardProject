@@ -35,8 +35,5 @@ div.topBar{@include boxes.box($padding: 15px)}
 
 div.main{display: flex}
 
-button {
-    @include boxes.button;
-    transition: 0.25s;
-}
+button {@include boxes.button;}
 button:hover {filter: brightness(1.04);}
