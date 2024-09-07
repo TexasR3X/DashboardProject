@@ -1,0 +1,47 @@
+@use 'colors';
+@use 'boxes';
+@use 'fonts';
+
+div.chat{
+    display: flex;
+    flex-direction: column;
+}
+
+div.activeProfile{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: colors.$gray1;
+    border-radius: 10px;
+    flex-grow: 1;
+
+    .callOptions{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+div.chatText{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    div.textBubble{
+        @include boxes.textbubble();
+    }
+    
+    div.text1, div.text3, div.text4{
+        align-self: flex-end;
+    }
+    
+    div.text2{
+        align-self: flex-start;
+        background-color: colors.$gray1;
+    }
+}
+

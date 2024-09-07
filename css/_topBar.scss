@@ -1,9 +1,14 @@
 @use "colors";
 @use "boxes";
+@use 'fonts';
 
 .topBar{
     display: flex;
     justify-content: space-between;
+}
+
+div.topBar button{
+    @include boxes.button($background: colors.$gray1);
 }
 
 .left{
@@ -21,16 +26,20 @@
     
     .calendar{
         margin-left: 15px;
-        @include boxes.button($background: colors.$gray1);
         padding: 15px;
     }
 }
-
-
 
 .right{
     display: flex;
     justify-content: space-between;
     gap: 10px;
+
+    .search{
+        border: none;
+        background-color: colors.$gray1;
+        border-radius: 40px;
+        padding: 0px 20px;
+    }
 }
 

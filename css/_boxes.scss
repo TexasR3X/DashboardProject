@@ -13,3 +13,11 @@
     padding: $padding;
     border-radius: 50px;
 }
+
+@mixin textbubble($background: colors.$blue, $padding: 10px) {
+    background: $background;
+    border: none;
+    padding: $padding;
+    border-radius: 10px;
+    width: 70%;
+}
