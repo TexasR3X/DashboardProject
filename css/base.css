@@ -5,9 +5,6 @@ div.sideNav {
   margin: 10px;
   width: 25%;
 }
-div.sideNav li {
-  list-style-type: none;
-}
 div.sideNav a {
   text-decoration: none;
   color: #7d7d7d;
@@ -21,9 +18,10 @@ div.sideNav ul i {
 }
 div.sideNav li {
   font-size: 13px;
+  display: flex;
   font-weight: 400;
   margin: 23px 0;
-  display: flex;
+  list-style-type: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -118,14 +116,14 @@ div.teamMember, div.invite {
   margin: 20px 0;
   cursor: pointer;
 }
-div.teamMember img, div.invite img {
-  height: 30px;
-}
-div.teamMember div.memberName, div.invite div.memberName {
+div.teamMember > :nth-child(2), div.invite > :nth-child(2) {
   flex-grow: 1;
   padding-left: 10px;
 }
-div.teamMember h6 + p, div.invite h6 + p {
+div.teamMember img, div.invite img {
+  height: 30px;
+}
+div.teamMember h5 + p, div.invite h5 + p {
   color: #7d7d7d;
 }
 
@@ -134,15 +132,34 @@ div.invite {
   border-top: 1px solid #d6d6d6;
   padding-top: 15px;
 }
-div.invite h6 {
-  margin-left: 20px;
+div.invite h5 {
+  padding-left: 20px;
 }
 
+div.projectTitle {
+  margin-bottom: 20px;
+}
 div.projectTitle h2 {
   margin: 17px 0 8px 0;
 }
 div.projectTitle :first-child {
   text-transform: uppercase;
+}
+
+div.eventInfo {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #ebebeb;
+  padding: 8px 8px 8px 15px;
+  margin-bottom: 12px;
+}
+div.eventInfo > :nth-child(2) {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+div.eventInfo div {
+  font-size: 13px;
 }
 
 * {

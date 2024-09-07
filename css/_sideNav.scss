@@ -6,8 +6,7 @@
 div.sideNav {
     @include boxes.box($background: colors.$gray1);
     width: 25%;
-
-    li {list-style-type: none;}
+    
     a {
         text-decoration: none;
         color: colors.$gray4;
@@ -17,9 +16,10 @@ div.sideNav {
     ul i {margin-right: 15px;}
     li {
         @include fonts.smallText;
+        display: flex;
         font-weight: 400;
         margin: 23px 0;
-        display: flex;
+        list-style-type: none;
         justify-content: space-between;
         align-items: center;
 

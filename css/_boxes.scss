@@ -14,3 +14,13 @@
     border-radius: 50px;
     cursor: pointer;
 }
+
+@mixin iconTextIcon {
+    display: flex;
+    align-items: center;
+
+    > :nth-child(2) {
+        flex-grow: 1;
+        padding-left: 10px;
+    }
+}
