@@ -21,7 +21,6 @@ div.sideNav ul i {
 }
 div.sideNav li {
   font-size: 13px;
-  font-weight: 200;
   font-weight: 400;
   margin: 23px 0;
   display: flex;
@@ -126,6 +125,9 @@ div.teamMember div.memberName, div.invite div.memberName {
   flex-grow: 1;
   padding-left: 10px;
 }
+div.teamMember h6 + p, div.invite h6 + p {
+  color: #7d7d7d;
+}
 
 div.invite {
   margin: 20px 0 -10px 0;
@@ -134,6 +136,13 @@ div.invite {
 }
 div.invite h6 {
   margin-left: 20px;
+}
+
+div.projectTitle h2 {
+  margin: 17px 0 8px 0;
+}
+div.projectTitle :first-child {
+  text-transform: uppercase;
 }
 
 * {
@@ -153,7 +162,7 @@ h2 {
 
 p {
   font-size: 13px;
-  font-weight: 200;
+  color: #7d7d7d;
 }
 
 div.container {

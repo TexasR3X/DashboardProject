@@ -23,6 +23,7 @@ div.teamMember, div.invite {
         flex-grow: 1;
         padding-left: 10px;
     }
+    h6 + p {color: colors.$gray4;}
 }
 
 div.invite {

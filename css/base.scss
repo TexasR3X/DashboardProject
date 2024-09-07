@@ -4,6 +4,7 @@
 @use "sideNav";
 @use "topBar";
 @use "team";
+@use "agenda";
 
 
 * {
@@ -19,7 +20,10 @@ body {
 
 h2 {font-size: 18px;}
 
-p {@include fonts.smallText;}
+p {
+    @include fonts.smallText;
+    color: colors.$gray4;
+}
 
 div.container {display: flex;}
 
