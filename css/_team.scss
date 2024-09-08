@@ -2,7 +2,6 @@
 @use "fonts";
 @use "boxes";
 
-
 div.team button {@include boxes.button($background: colors.$gray3);}
 
 div.teamTitle {

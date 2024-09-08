@@ -5,7 +5,8 @@
 
 div.sideNav {
     @include boxes.box($background: colors.$gray1);
-    width: 25%;
+    width: 15%;
+    height: 90vh;
     
     a {
         text-decoration: none;
@@ -47,5 +48,8 @@ div.upgrade {
         padding: 0 10px;
         margin: -10px 0 15px 0;
     }
-    button {@include boxes.button($padding: 5px 50px);}
+    button {
+        @include boxes.button($padding: 5px 50px);
+        width: 100%;
+    }
 }

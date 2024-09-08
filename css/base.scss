@@ -25,15 +25,23 @@ p {
     color: colors.$gray4;
 }
 
-div.container {display: flex;}
+div.container {
+    display: flex;
+    justify-content: center;
+}
 
 
 div.chat {@include boxes.box();}
 div.team, div.agenda {@include boxes.box($padding: 30px);}
 
-div.topBar{@include boxes.box($padding: 15px)}
+div.topBar {@include boxes.box($padding: 15px);}
 
-div.main{display: flex}
+div.rightColumn {width: 50%;}
+
+div.main {
+    display: flex;
+    height: 90vh;
+}
 
 button {@include boxes.button;}
 button:hover {filter: brightness(1.04);}

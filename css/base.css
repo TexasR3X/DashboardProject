@@ -3,7 +3,8 @@ div.sideNav {
   background: #ebebeb;
   padding: 40px;
   margin: 10px;
-  width: 25%;
+  width: 15%;
+  height: 90vh;
 }
 div.sideNav a {
   text-decoration: none;
@@ -61,6 +62,7 @@ div.upgrade button {
   border-radius: 50px;
   cursor: pointer;
   transition: 0.25s;
+  width: 100%;
 }
 
 .topBar {
@@ -109,6 +111,7 @@ div.topBar button {
 div.chat {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 div.activeProfile {
@@ -248,6 +251,7 @@ p {
 
 div.container {
   display: flex;
+  justify-content: center;
 }
 
 div.chat {
@@ -271,8 +275,13 @@ div.topBar {
   margin: 10px;
 }
 
+div.rightColumn {
+  width: 50%;
+}
+
 div.main {
   display: flex;
+  height: 90vh;
 }
 
 button {
