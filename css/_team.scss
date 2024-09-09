@@ -7,6 +7,7 @@ div.team button {@include boxes.button($background: colors.$gray3);}
 div.teamTitle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
     button {color: colors.$darkBlue;}
 }
@@ -26,4 +27,8 @@ div.invite {
     padding-top: 15px;
 
     h5 {padding-left: 20px;}
+}
+
+button.inviteButton{
+    padding: 8px 25px;
 }

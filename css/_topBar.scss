@@ -26,7 +26,6 @@ div.topBar button{
     
     .calendar{
         margin-left: 15px;
-        padding: 15px;
     }
 }
 
@@ -40,6 +39,10 @@ div.topBar button{
         background-color: colors.$gray1;
         border-radius: 40px;
         padding: 0px 20px;
+    }
+
+    .notifications, .messages{
+        padding: 0px 15px;
     }
 }
 

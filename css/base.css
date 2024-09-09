@@ -1,10 +1,22 @@
 div.sideNav {
   border-radius: 15px;
   background: #ebebeb;
-  padding: 40px;
-  margin: 10px;
+  padding: 25px;
+  margin: 12px;
   width: 15%;
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4rem;
+}
+div.sideNav img {
+  width: 100px;
+}
+div.sideNav ul.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 2;
 }
 div.sideNav a {
   text-decoration: none;
@@ -21,48 +33,49 @@ div.sideNav li {
   font-size: 13px;
   display: flex;
   font-weight: 400;
-  margin: 23px 0;
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
 }
 div.sideNav li button {
   background: #d6d6d6;
-  padding: 5px;
+  padding: 2px 5px;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.25s;
 }
-
-div.sideNav > img {
-  display: block;
-  height: 35px;
-  margin-bottom: 70px;
-}
-
-div.upgrade {
+div.sideNav div.upgrade {
   border-radius: 15px;
   background: #fff;
-  padding: 20px 30px;
-  margin: 10px;
+  padding: 20px 10px;
+  margin: 0px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #fff 70%, #fff 100%);
-  margin: 120px 0 50px 0;
   text-align: center;
+  flex-grow: 1;
+  position: relative;
+  top: 100px;
 }
-div.upgrade p {
+div.sideNav div.upgrade p {
   color: #380d83;
   padding: 0 10px;
   margin: -10px 0 15px 0;
 }
-div.upgrade button {
+div.sideNav div.upgrade button {
   background: #a3d6ff;
-  padding: 5px 50px;
+  padding: 10px;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.25s;
   width: 100%;
+}
+div.sideNav ul.misc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .topBar {
@@ -72,7 +85,7 @@ div.upgrade button {
 
 div.topBar button {
   background: #ebebeb;
-  padding: 5px;
+  padding: 10px;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -93,7 +106,6 @@ div.topBar button {
 }
 .left .calendar {
   margin-left: 15px;
-  padding: 15px;
 }
 
 .right {
@@ -106,6 +118,18 @@ div.topBar button {
   background-color: #ebebeb;
   border-radius: 40px;
   padding: 0px 20px;
+}
+.right .notifications, .right .messages {
+  padding: 0px 15px;
+}
+
+div.chat button {
+  background: #ebebeb;
+  padding: 10px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 div.chat {
@@ -121,12 +145,18 @@ div.activeProfile {
   justify-content: space-evenly;
   background-color: #ebebeb;
   border-radius: 10px;
-  flex-grow: 1;
+  flex-grow: 2;
+}
+div.activeProfile img {
+  height: 100px;
 }
 div.activeProfile .callOptions {
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+div.activeProfile .callOptions .ellipsis {
+  padding: 0px 5px;
 }
 
 div.chatText {
@@ -134,8 +164,10 @@ div.chatText {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-top: 30px;
+}
+div.chatText h4 {
+  align-self: center;
 }
 div.chatText div.textBubble {
   background: #a3d6ff;
@@ -151,10 +183,24 @@ div.chatText div.text2 {
   align-self: flex-start;
   background-color: #ebebeb;
 }
+div.chatText div.writeMessage {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 10px;
+}
+div.chatText div.writeMessage input {
+  border: none;
+  background-color: inherit;
+  padding: 0px 5px;
+  width: 170px;
+}
 
 div.team button {
   background: #d6d6d6;
-  padding: 5px;
+  padding: 10px;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -164,6 +210,7 @@ div.team button {
 div.teamTitle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 div.teamTitle button {
   color: #2020a0;
@@ -195,6 +242,10 @@ div.invite h5 {
   padding-left: 20px;
 }
 
+button.inviteButton {
+  padding: 8px 25px;
+}
+
 div.projectTitle {
   margin-bottom: 20px;
 }
@@ -224,9 +275,29 @@ div.eventInfo button {
   background: #ebebeb;
 }
 
+div.attendees {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.attendees div:first-child h5 {
+  padding-bottom: 10px;
+}
 div.attendees div:first-child img {
   height: 24px;
   margin-right: -13px;
+}
+
+div.attendees div:nth-child(2) {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+div.attendees div:nth-child(2) button {
+  padding: 8px 10px 8px 8px;
 }
 
 * {
@@ -237,7 +308,7 @@ div.attendees div:first-child img {
 
 body {
   background: #d6d6d6;
-  margin: 70px;
+  margin: 30px;
 }
 
 h2 {
@@ -257,22 +328,22 @@ div.container {
 div.chat {
   border-radius: 15px;
   background: #fff;
-  padding: 40px;
-  margin: 10px;
+  padding: 20px;
+  margin: 12px;
 }
 
 div.team, div.agenda {
   border-radius: 15px;
   background: #fff;
   padding: 30px;
-  margin: 10px;
+  margin: 12px;
 }
 
 div.topBar {
   border-radius: 15px;
   background: #fff;
   padding: 15px;
-  margin: 10px;
+  margin: 12px;
 }
 
 div.rightColumn {
@@ -281,12 +352,12 @@ div.rightColumn {
 
 div.main {
   display: flex;
-  height: 90vh;
+  justify-content: space-between;
 }
 
 button {
   background: #a3d6ff;
-  padding: 5px;
+  padding: 10px;
   border: 0;
   border-radius: 50px;
   cursor: pointer;

@@ -1,13 +1,13 @@
 @use "colors";
 
-@mixin box($background: colors.$white, $padding: 40px) {
+@mixin box($background: colors.$white, $padding: 40px, $margin: 12px) {
     border-radius: 15px;
     background: $background;
     padding: $padding;
-    margin: 10px;
+    margin: $margin;
 }
 
-@mixin button($background: colors.$blue, $padding: 5px) {
+@mixin button($background: colors.$blue, $padding: 10px) {
     background: $background;
     padding: $padding;
     border: 0;

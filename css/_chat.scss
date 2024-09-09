@@ -2,6 +2,10 @@
 @use 'boxes';
 @use 'fonts';
 
+div.chat button{
+    @include boxes.button($background: colors.$gray1);
+}
+
 div.chat{
     display: flex;
     flex-direction: column;
@@ -15,12 +19,19 @@ div.activeProfile{
     justify-content: space-evenly;
     background-color: colors.$gray1;
     border-radius: 10px;
-    flex-grow: 1;
+    flex-grow: 2;
+    img{
+        height: 100px;
+    }
 
     .callOptions{
         display: flex;
         justify-content: center;
         gap: 25px;
+
+        .ellipsis{
+            padding: 0px 5px;
+        }
     }
 }
 
@@ -29,8 +40,11 @@ div.chatText{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin-top: 30px;
+
+    h4{
+        align-self: center;
+    }
 
     div.textBubble{
         @include boxes.textbubble();
@@ -43,6 +57,22 @@ div.chatText{
     div.text2{
         align-self: flex-start;
         background-color: colors.$gray1;
+    }
+
+    div.writeMessage{
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        background-color: colors.$gray1;
+        padding: 5px;
+        border-radius: 10px;
+
+        input{
+            border: none;
+            background-color: inherit;
+            padding: 0px 5px;
+            width: 170px;
+        }
     }
 }
 
