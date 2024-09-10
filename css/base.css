@@ -198,15 +198,6 @@ div.chatText div.writeMessage input {
   width: 170px;
 }
 
-div.team button {
-  background: #d6d6d6;
-  padding: 10px;
-  border: 0;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
 div.teamTitle {
   display: flex;
   justify-content: space-between;
@@ -233,6 +224,10 @@ div.teamMember h5 + p, div.invite h5 + p {
   color: #7d7d7d;
 }
 
+div.teamMember button, div.teamTitle button {
+  background: #ebebeb;
+}
+
 div.invite {
   margin: 20px 0 -10px 0;
   border-top: 1px solid #d6d6d6;
@@ -240,10 +235,6 @@ div.invite {
 }
 div.invite h5 {
   padding-left: 20px;
-}
-
-button.inviteButton {
-  padding: 8px 25px;
 }
 
 div.projectTitle {
