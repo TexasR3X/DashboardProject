@@ -77,10 +77,27 @@ div.chatText{
     }
 }
 
-div button.googleMeetLink{
-    background: colors.$white;
+div.text4{
+    display: flex;
+    align-items: center;
 
-    img{
-        height: 20px;
+    button.googleMeetLink{
+        background: colors.$white;
+
+        img{
+            height: 20px;
+        }
+    }
+    div{
+        margin-left: 5px;
+
+        :first-child{
+            font-size: fonts.$smallText;
+            margin-bottom: 3px;
+        }
+        :last-child{
+            color: colors.$gray4;
+            font-size: fonts.$smallerText;
+        }
     }
 }

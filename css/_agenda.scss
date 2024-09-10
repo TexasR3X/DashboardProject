@@ -16,7 +16,7 @@ div.eventInfo {
     padding: 8px 8px 8px 15px;
     margin-bottom: 12px;
 
-    div {@include fonts.smallText;}
+    div {font-size: fonts.$smallText;}
     button {background: colors.$gray1;}
 }
 
