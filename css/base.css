@@ -179,11 +179,6 @@ div.chatText div.textBubble {
 div.chatText div.text1, div.chatText div.text3, div.chatText div.text4 {
   align-self: flex-end;
 }
-div.chatText div.text2 {
-  align-self: flex-start;
-  background-color: #ebebeb;
-  border-radius: 10px 10px 10px 3px;
-}
 div.chatText div.writeMessage {
   display: flex;
   justify-content: space-around;
@@ -197,6 +192,32 @@ div.chatText div.writeMessage input {
   background-color: inherit;
   padding: 0px 5px;
   width: 170px;
+}
+
+div.chatText div.textBubble.text2 {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  background-color: #ebebeb;
+  border-radius: 10px 10px 10px 3px;
+}
+div.chatText div.textBubble.text2 button {
+  background: #a3d6ff;
+}
+div.chatText div.textBubble.text2 button img:first-child {
+  height: 15px;
+}
+div.chatText div.textBubble.text2 div.audioFileImg {
+  background: #ebebeb url(../images/audioFileImg.png);
+  background-size: cover;
+  flex-grow: 1;
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px;
+}
+div.chatText div.textBubble.text2 div.time {
+  color: #7d7d7d;
+  font-size: 11px;
 }
 
 div.text4 {
