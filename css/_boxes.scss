@@ -26,10 +26,10 @@
     }
 }
 
-@mixin textbubble($background: colors.$blue, $padding: 10px) {
+@mixin textbubble($background: colors.$lightBlue, $padding: 10px) {
     background: $background;
     border: none;
     padding: $padding;
-    border-radius: 10px;
+    border-radius: 10px 10px 3px 10px;
     width: 70%;
 }
