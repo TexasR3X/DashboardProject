@@ -53,12 +53,6 @@ div.chatText{
     div.text1, div.text3, div.text4{
         align-self: flex-end;
     }
-    
-    div.text2{
-        align-self: flex-start;
-        background-color: colors.$gray1;
-        border-radius: 10px 10px 10px 3px;
-    }
 
     div.writeMessage{
         display: flex;
@@ -73,6 +67,59 @@ div.chatText{
             background-color: inherit;
             padding: 0px 5px;
             width: 170px;
+        }
+    }
+}
+
+div.chatText div.textBubble.text2{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    background-color: colors.$gray1;
+    border-radius: 10px 10px 10px 3px;
+
+    button{
+        background: colors.$blue;
+
+        img:first-child{
+            height: 15px
+        }
+    }
+    div.audioFileImg{
+        background: colors.$gray1 url(../images/audioFileImg.png);
+        background-size: cover;
+        flex-grow: 1;
+        height: 50px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    div.time{
+        color: colors.$gray4;
+        font-size: fonts.$smallerText;
+    }
+}
+
+div.text4{
+    display: flex;
+    align-items: center;
+
+    button.googleMeetLink{
+        background: colors.$white;
+
+        img{
+            height: 20px;
+        }
+    }
+    div{
+        margin-left: 5px;
+
+        :first-child{
+            font-size: fonts.$smallText;
+            margin-bottom: 3px;
+        }
+        :last-child{
+            color: colors.$gray4;
+            font-size: fonts.$smallerText;
         }
     }
 }
