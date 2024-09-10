@@ -199,6 +199,13 @@ div.chatText div.writeMessage input {
   width: 170px;
 }
 
+div button.googleMeetLink {
+  background: #fff;
+}
+div button.googleMeetLink img {
+  height: 20px;
+}
+
 div.teamTitle {
   display: flex;
   justify-content: space-between;
