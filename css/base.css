@@ -77,6 +77,11 @@ div.sideNav ul.misc {
   flex-grow: 1;
   justify-content: flex-end;
 }
+@media screen and (max-width: 1000px) {
+  div.sideNav {
+    display: none;
+  }
+}
 
 .topBar {
   display: flex;
@@ -358,6 +363,14 @@ p {
 div.container {
   display: flex;
   justify-content: center;
+  /*
+  @media screen and (max-width: 1000px) {
+      flex-direction: column;
+  }
+  @media screen and (min-width: 1001px) {
+      flex-direction: row;
+  }
+  */
 }
 
 div.chat {
