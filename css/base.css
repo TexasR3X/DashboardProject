@@ -25,6 +25,21 @@ div.sideNav {
   justify-content: space-around;
   gap: 4rem;
 }
+div.sideNav > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+div.sideNav > div:first-child button {
+  background: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: -8px -8px 0 0;
+  font-size: 20px;
+  transition: font-weight 0.25s;
+}
+div.sideNav > div:first-child button:hover {
+  font-weight: bold;
+}
 div.sideNav img {
   width: 100px;
 }

@@ -17,6 +17,10 @@ $smallScreenWidth: 296px;
     cursor: pointer;
     transition: filter 0.25s;
 }
+@mixin blankButton {
+    background: #0000;
+    padding: 0;
+}
 
 @mixin iconTextIcon {
     display: flex;

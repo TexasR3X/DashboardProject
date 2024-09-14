@@ -10,12 +10,25 @@ div.sideNav {
     flex-direction: column;
     justify-content: space-around;
     gap: 4rem;
-    
-    img{
-        width: 100px;
-    }
 
-    ul.nav{
+    > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        button {
+            @include boxes.blankButton;
+
+            margin: -8px -8px 0 0;
+            font-size: 20px;
+            transition: font-weight 0.25s;
+
+            &:hover {font-weight: bold;}
+        }
+    }
+    img {width: 100px;}
+
+    ul.nav {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -27,11 +40,9 @@ div.sideNav {
         color: colors.$gray4;
         transition: 0.25s;
     }
-
     a.currentPage, a:hover {color: colors.$black;}
 
     ul i {margin-right: 15px;}
-
     li {
         font-size: fonts.$smallText;
         display: flex;
@@ -40,9 +51,7 @@ div.sideNav {
         justify-content: space-between;
         align-items: center;
 
-        button {
-            @include boxes.button($background: colors.$gray3, $padding: 2px 5px);
-        }
+        button {@include boxes.button($background: colors.$gray3, $padding: 2px 5px);}
     }
 
     div.upgrade {
@@ -64,7 +73,6 @@ div.sideNav {
             width: 100%;
         }
     }
-    
     ul.misc {
         display: flex;
         flex-direction: column;
