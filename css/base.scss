@@ -28,15 +28,6 @@ p {
 div.container {
     display: flex;
     justify-content: center;
-
-    /*
-    @media screen and (max-width: 1000px) {
-        flex-direction: column;
-    }
-    @media screen and (min-width: 1001px) {
-        flex-direction: row;
-    }
-    */
 }
 
 div.chat {@include boxes.box($padding: 20px);}
@@ -49,7 +40,10 @@ div.rightColumn {width: 50%;}
 
 div.main {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+
+    @media screen and (max-width: 780px) {flex-direction: column;}
+    @media screen and (min-width: 781px) {flex-direction: row;}
 }
 
 button {@include boxes.button;}

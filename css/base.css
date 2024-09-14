@@ -77,7 +77,7 @@ div.sideNav ul.misc {
   flex-grow: 1;
   justify-content: flex-end;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
   div.sideNav {
     display: none;
   }
@@ -140,7 +140,7 @@ div.chat button {
 div.chat {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
 }
 
 div.activeProfile {
@@ -213,7 +213,7 @@ div.chatText div.textBubble.text2 button img:first-child {
   height: 15px;
 }
 div.chatText div.textBubble.text2 div.audioFileImg {
-  background: #ebebeb url(../images/audioFileImg.png);
+  background: #ebebeb url(../images/audioFileImg.png) center;
   background-size: cover;
   flex-grow: 1;
   height: 50px;
@@ -328,6 +328,11 @@ div.attendees div:first-child img {
   height: 24px;
   margin-right: -13px;
 }
+@media screen and (max-width: 830px) {
+  div.attendees div:last-child h5 {
+    display: none;
+  }
+}
 
 div.attendees div:nth-child(2) {
   align-self: flex-end;
@@ -363,14 +368,6 @@ p {
 div.container {
   display: flex;
   justify-content: center;
-  /*
-  @media screen and (max-width: 1000px) {
-      flex-direction: column;
-  }
-  @media screen and (min-width: 1001px) {
-      flex-direction: row;
-  }
-  */
 }
 
 div.chat {
@@ -401,6 +398,16 @@ div.rightColumn {
 div.main {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 780px) {
+  div.main {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 781px) {
+  div.main {
+    flex-direction: row;
+  }
 }
 
 button {

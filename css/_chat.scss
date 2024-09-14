@@ -9,7 +9,7 @@ div.chat button{
 div.chat{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
 
 div.activeProfile{
@@ -86,7 +86,7 @@ div.chatText div.textBubble.text2{
         }
     }
     div.audioFileImg{
-        background: colors.$gray1 url(../images/audioFileImg.png);
+        background: colors.$gray1 url(../images/audioFileImg.png) center;
         background-size: cover;
         flex-grow: 1;
         height: 50px;
