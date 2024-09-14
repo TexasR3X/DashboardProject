@@ -64,5 +64,5 @@ div.main {
     @media screen and (min-width: 781px) {flex-direction: row;}
 }
 
-button {@include boxes.button;}
+button:not(.hamburgerMenu) {@include boxes.button;}
 button:hover {filter: brightness(1.04);}

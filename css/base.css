@@ -115,19 +115,21 @@ div.sideNav ul.misc {
   }
 }
 
-div.hamburgerMenu {
+button.hamburgerMenu {
   font-size: 35px;
   margin-right: 15px;
   padding: 0;
   cursor: pointer;
+  background: #fff;
+  border: 0;
 }
 @media screen and (min-width: 1041px) {
-  div.hamburgerMenu {
+  button.hamburgerMenu {
     display: none;
   }
 }
 
-div.topBar button {
+div.topBar button:not(.hamburgerMenu) {
   background: #ebebeb;
   padding: 10px;
   border: 0;
@@ -483,7 +485,7 @@ div.main {
   }
 }
 
-button {
+button:not(.hamburgerMenu) {
   background: #a3d6ff;
   padding: 10px;
   border: 0;
