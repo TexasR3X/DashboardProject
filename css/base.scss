@@ -36,7 +36,12 @@ div.team, div.agenda {@include boxes.box($padding: 30px);}
 
 div.topBar {@include boxes.box($padding: 15px);}
 
-div.rightColumn {width: 50%;}
+div.rightColumn, div.chat {
+    @media screen and (max-width: 780px) {
+        width: 430px;
+    }
+    @media screen and (min-width: 781px) {width: 50%;}
+}
 
 div.main {
     display: flex;

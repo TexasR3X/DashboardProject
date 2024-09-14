@@ -140,7 +140,6 @@ div.chat button {
 div.chat {
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
 
 div.activeProfile {
@@ -391,8 +390,15 @@ div.topBar {
   margin: 12px;
 }
 
-div.rightColumn {
-  width: 50%;
+@media screen and (max-width: 780px) {
+  div.rightColumn, div.chat {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 781px) {
+  div.rightColumn, div.chat {
+    width: 50%;
+  }
 }
 
 div.main {
