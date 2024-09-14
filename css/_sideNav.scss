@@ -24,6 +24,8 @@ div.sideNav {
             transition: font-weight 0.25s;
 
             &:hover {font-weight: bold;}
+
+            @media screen and (min-width: 1041px) {display: none;}
         }
     }
     img {width: 100px;}
@@ -81,16 +83,16 @@ div.sideNav {
         justify-content: flex-end;
     }
     
-    @media screen and (max-width: 1040px) {display: none;}
-}
+    @media screen and (max-width: 1040px) {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        width: calc(boxes.$smallScreenWidth - 10px - 10vh);
+        height: 80vh;
+        max-height: 820px;
 
-div.popUpSideBar {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    display: flex;
-    width: calc(boxes.$smallScreenWidth - 10px - 10vh);
-    height: 80vh;
-
-    div.upgrade {top: 8vh;}
+        div.upgrade {top: 8vh;}
+    }
+    @media screen and (min-width: 1041px) {display: flex !important;}
 }

@@ -40,6 +40,11 @@ div.sideNav > div:first-child button {
 div.sideNav > div:first-child button:hover {
   font-weight: bold;
 }
+@media screen and (min-width: 1041px) {
+  div.sideNav > div:first-child button {
+    display: none;
+  }
+}
 div.sideNav img {
   width: 100px;
 }
@@ -117,19 +122,21 @@ div.sideNav ul.misc {
 @media screen and (max-width: 1040px) {
   div.sideNav {
     display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: calc(286px - 10vh);
+    height: 80vh;
+    max-height: 820px;
+  }
+  div.sideNav div.upgrade {
+    top: 8vh;
   }
 }
-
-div.popUpSideBar {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  display: flex;
-  width: calc(286px - 10vh);
-  height: 80vh;
-}
-div.popUpSideBar div.upgrade {
-  top: 8vh;
+@media screen and (min-width: 1041px) {
+  div.sideNav {
+    display: flex !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
