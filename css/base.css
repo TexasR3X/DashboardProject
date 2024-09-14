@@ -99,6 +99,18 @@ div.sideNav ul.misc {
   }
 }
 
+div.popUpSideBar {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  display: flex;
+  width: calc(286px - 10vh);
+  height: 80vh;
+}
+div.popUpSideBar div.upgrade {
+  top: 8vh;
+}
+
 @media screen and (max-width: 780px) {
   .left .calendar, .left .accountInfo > :last-child * {
     font-size: 11px;
