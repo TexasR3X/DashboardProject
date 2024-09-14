@@ -40,6 +40,9 @@ div.chatText{
     flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
+    @media screen and (max-width: 780px){
+        gap: 15px;
+    }
 
     h4{
         align-self: center;

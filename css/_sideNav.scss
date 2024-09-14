@@ -2,7 +2,6 @@
 @use "fonts";
 @use "boxes";
 
-
 div.sideNav {
     @include boxes.box($background: colors.$gray1, $padding: 25px);
     width: 15%;
@@ -72,7 +71,5 @@ div.sideNav {
         justify-content: flex-end;
     }
     
-    @media screen and (max-width: 1040px) {
-        display: none;
-    }
+    @media screen and (max-width: 1040px) {display: none;}
 }

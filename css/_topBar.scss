@@ -2,6 +2,12 @@
 @use "boxes";
 @use 'fonts';
 
+%smallScreenFont {
+    @media screen and (max-width: 780px) {
+        font-size: fonts.$smallerText;
+    }
+}
+
 .topBar{
     display: flex;
     gap: 10px;
@@ -36,6 +42,10 @@ div.topBar button:not(.hamburgerMenu){
     display: flex;
     height: 40px;
 
+    @media screen and (max-width: 780px) {
+        justify-content: space-between;
+    }
+
     .accountInfo{
         display: flex;
         border-right: 1px solid colors.$gray3;
@@ -45,10 +55,15 @@ div.topBar button:not(.hamburgerMenu){
             height: 40px;
             padding-right: 10px;
         }
+        > :last-child *{
+            @extend %smallScreenFont;
+        }
     }
     
     .calendar{
         margin-left: 15px;
+
+        @extend %smallScreenFont;
     }
 }
 

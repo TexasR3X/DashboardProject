@@ -59,7 +59,7 @@ div.sideNav li button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: filter 0.25s;
 }
 div.sideNav div.upgrade {
   border-radius: 15px;
@@ -83,7 +83,7 @@ div.sideNav div.upgrade button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: filter 0.25s;
   width: 100%;
 }
 div.sideNav ul.misc {
@@ -96,6 +96,12 @@ div.sideNav ul.misc {
 @media screen and (max-width: 1040px) {
   div.sideNav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .left .calendar, .left .accountInfo > :last-child * {
+    font-size: 11px;
   }
 }
 
@@ -135,12 +141,17 @@ div.topBar button:not(.hamburgerMenu) {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: filter 0.25s;
 }
 
 .left {
   display: flex;
   height: 40px;
+}
+@media screen and (max-width: 780px) {
+  .left {
+    justify-content: space-between;
+  }
 }
 .left .accountInfo {
   display: flex;
@@ -177,7 +188,7 @@ div.chat button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: filter 0.25s;
 }
 
 div.chat {
@@ -212,6 +223,11 @@ div.chatText {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
+}
+@media screen and (max-width: 780px) {
+  div.chatText {
+    gap: 15px;
+  }
 }
 div.chatText h4 {
   align-self: center;
@@ -370,9 +386,9 @@ div.attendees div:first-child img {
   height: 24px;
   margin-right: -13px;
 }
-@media screen and (max-width: 830px) {
+@media screen and (min-width: 781px) and (max-width: 1040px) {
   div.attendees div:last-child h5 {
-    display: none;
+    font-size: 11px;
   }
 }
 
@@ -491,7 +507,7 @@ button:not(.hamburgerMenu) {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.25s;
+  transition: filter 0.25s;
 }
 
 button:hover {

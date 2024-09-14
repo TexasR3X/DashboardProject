@@ -15,7 +15,7 @@ $smallScreenWidth: 296px;
     border: 0;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.25s;
+    transition: filter 0.25s;
 }
 
 @mixin iconTextIcon {
