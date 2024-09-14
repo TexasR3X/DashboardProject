@@ -33,6 +33,7 @@ div.container {
 div.chat {@include boxes.box($padding: 20px);}
 
 div.team, div.agenda {@include boxes.box($padding: 30px);}
+div.agenda {margin-top: 24px;}
 
 div.topBar {
     @media screen and (max-width: 780px) {@include boxes.box($padding: 15px 20px);}

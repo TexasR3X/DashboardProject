@@ -115,6 +115,18 @@ div.sideNav ul.misc {
   }
 }
 
+div.hamburgerMenu {
+  font-size: 35px;
+  margin-right: 15px;
+  padding: 0;
+  cursor: pointer;
+}
+@media screen and (min-width: 1041px) {
+  div.hamburgerMenu {
+    display: none;
+  }
+}
+
 div.topBar button {
   background: #ebebeb;
   padding: 10px;
@@ -410,6 +422,10 @@ div.team, div.agenda {
   background: #fff;
   padding: 30px;
   margin: 12px;
+}
+
+div.agenda {
+  margin-top: 24px;
 }
 
 @media screen and (max-width: 780px) {
