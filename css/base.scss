@@ -34,11 +34,20 @@ div.chat {@include boxes.box($padding: 20px);}
 
 div.team, div.agenda {@include boxes.box($padding: 30px);}
 
-div.topBar {@include boxes.box($padding: 15px);}
+div.topBar {
+    @media screen and (max-width: 780px) {@include boxes.box($padding: 15px 20px);}
+    @media screen and (min-width: 781px) {@include boxes.box($padding: 15px);}
+}
 
-div.rightColumn, div.chat {
+div.chat {
     @media screen and (max-width: 780px) {
-        width: 430px;
+        width: calc(boxes.$smallScreenWidth);
+    }
+    @media screen and (min-width: 781px) {width: 50%;}
+}
+div.rightColumn {
+    @media screen and (max-width: 780px) {
+        width: boxes.$smallScreenWidth + 64px;
     }
     @media screen and (min-width: 781px) {width: 50%;}
 }
@@ -47,7 +56,10 @@ div.main {
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 780px) {flex-direction: column;}
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+        align-items: center;
+    }
     @media screen and (min-width: 781px) {flex-direction: row;}
 }
 

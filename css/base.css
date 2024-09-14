@@ -1,3 +1,19 @@
+/*
+@mixin breakPoint($breakPoint, $upperOrLower) {
+    @if $breakPoint == 1 {
+        @if $upperOrLower == lower {min-width: 0;}
+        @else if $upperOrLower == upper {max-width: 780px;}
+    }
+    @else if $breakPoint == 2 {
+        @if $upperOrLower == lower {min-width: 781px;}
+        @else if $upperOrLower == upper {max-width: 1040px;}
+    }
+    @else if $breakPoint == 3 {
+        @if $upperOrLower == lower {min-width: 1041px;}
+        @else if $upperOrLower == upper {max-width: 100000000000000px;}
+    }
+}
+*/
 div.sideNav {
   border-radius: 15px;
   background: #ebebeb;
@@ -85,7 +101,18 @@ div.sideNav ul.misc {
 
 .topBar {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+}
+@media screen and (max-width: 780px) {
+  .topBar {
+    width: 296px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 781px) {
+  .topBar {
+    justify-content: space-between;
+  }
 }
 
 div.topBar button {
@@ -99,6 +126,7 @@ div.topBar button {
 
 .left {
   display: flex;
+  height: 40px;
 }
 .left .accountInfo {
   display: flex;
@@ -117,6 +145,7 @@ div.topBar button {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  height: 40px;
 }
 .right .search {
   border: none;
@@ -383,20 +412,41 @@ div.team, div.agenda {
   margin: 12px;
 }
 
-div.topBar {
-  border-radius: 15px;
-  background: #fff;
-  padding: 15px;
-  margin: 12px;
-}
-
 @media screen and (max-width: 780px) {
-  div.rightColumn, div.chat {
-    width: 430px;
+  div.topBar {
+    border-radius: 15px;
+    background: #fff;
+    padding: 15px 20px;
+    margin: 12px;
   }
 }
 @media screen and (min-width: 781px) {
-  div.rightColumn, div.chat {
+  div.topBar {
+    border-radius: 15px;
+    background: #fff;
+    padding: 15px;
+    margin: 12px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  div.chat {
+    width: 296px;
+  }
+}
+@media screen and (min-width: 781px) {
+  div.chat {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  div.rightColumn {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 781px) {
+  div.rightColumn {
     width: 50%;
   }
 }
@@ -408,6 +458,7 @@ div.main {
 @media screen and (max-width: 780px) {
   div.main {
     flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 781px) {
