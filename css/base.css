@@ -31,8 +31,8 @@ div.sideNav > div:first-child {
   align-items: start;
 }
 div.sideNav > div:first-child button {
-  background: rgba(0, 0, 0, 0);
-  padding: 0;
+  background: rgba(0, 0, 0, 0) !important;
+  padding: 0 !important;
   margin: -8px -8px 0 0;
   font-size: 20px;
   transition: font-weight 0.25s;
@@ -76,6 +76,9 @@ div.sideNav li button {
   cursor: pointer;
   transition: filter 0.25s;
 }
+div.sideNav li button:hover {
+  filter: brightness(1.04);
+}
 div.sideNav div.upgrade {
   border-radius: 15px;
   background: #fff;
@@ -100,6 +103,9 @@ div.sideNav div.upgrade button {
   cursor: pointer;
   transition: filter 0.25s;
   width: 100%;
+}
+div.sideNav div.upgrade button:hover {
+  filter: brightness(1.04);
 }
 div.sideNav ul.misc {
   display: flex;
@@ -149,12 +155,10 @@ div.popUpSideBar div.upgrade {
 }
 
 button.hamburgerMenu {
+  background: rgba(0, 0, 0, 0) !important;
+  padding: 0 !important;
   font-size: 35px;
   margin-right: 15px;
-  padding: 0;
-  cursor: pointer;
-  background: #fff;
-  border: 0;
 }
 @media screen and (min-width: 1041px) {
   button.hamburgerMenu {
@@ -162,13 +166,16 @@ button.hamburgerMenu {
   }
 }
 
-div.topBar button:not(.hamburgerMenu) {
+div.topBar button {
   background: #ebebeb;
   padding: 10px;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
   transition: filter 0.25s;
+}
+div.topBar button:hover {
+  filter: brightness(1.04);
 }
 
 .left {
@@ -216,6 +223,9 @@ div.chat button {
   border-radius: 50px;
   cursor: pointer;
   transition: filter 0.25s;
+}
+div.chat button:hover {
+  filter: brightness(1.04);
 }
 
 div.chat {
@@ -528,7 +538,7 @@ div.main {
   }
 }
 
-button:not(.hamburgerMenu) {
+button {
   background: #a3d6ff;
   padding: 10px;
   border: 0;
@@ -536,7 +546,6 @@ button:not(.hamburgerMenu) {
   cursor: pointer;
   transition: filter 0.25s;
 }
-
 button:hover {
   filter: brightness(1.04);
 }/*# sourceMappingURL=base.css.map */

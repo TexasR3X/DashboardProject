@@ -16,10 +16,12 @@ $smallScreenWidth: 296px;
     border-radius: 50px;
     cursor: pointer;
     transition: filter 0.25s;
+
+    &:hover {filter: brightness(1.04);}
 }
 @mixin blankButton {
-    background: #0000;
-    padding: 0;
+    background: #0000 !important;
+    padding: 0 !important;
 }
 
 @mixin iconTextIcon {

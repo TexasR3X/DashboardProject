@@ -22,19 +22,17 @@
 }
 
 button.hamburgerMenu{
+    @include boxes.blankButton;
+    
     font-size: 35px;
     margin-right: 15px;
-    padding: 0;
-    cursor: pointer;
-    background: colors.$white;
-    border: 0;
 
     @media screen and (min-width: 1041px) {
         display: none;
     }
 }
 
-div.topBar button:not(.hamburgerMenu){
+div.topBar button{
     @include boxes.button($background: colors.$gray1);
 }
 
