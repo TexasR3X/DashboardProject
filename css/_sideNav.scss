@@ -68,7 +68,7 @@ div.sideNav {
         p {
             color: colors.$purple;
             padding: 0 10px;
-            margin: -10px 0 15px 0;
+            margin: 10px 0 15px 0;
         }
         button {
             @include boxes.button();
