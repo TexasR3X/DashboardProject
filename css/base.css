@@ -497,6 +497,9 @@ div.agenda {
     padding: 15px 20px;
     margin: 12px;
   }
+  div.topBar .search {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 781px) {
   div.topBar {
